@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "timetables": "^1.1.0",
+    "vue-captcha": "^1.0.2",
+    "vue-recaptcha": "^3.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "next"
+  }
+}

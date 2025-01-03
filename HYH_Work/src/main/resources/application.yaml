@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.92.90.228:3306/hyh_work
+    username: root
+    password: mysql_mhzPC3
+server:
+  port: 3009
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.example.hyh.entity
+kaptcha:
+  image:
+    width: 100
+    height: 60
+  textproducer:
+    font:
+      size: 36
+  items:
+    # home captcha
+    admin:
+      path: /admin/captcha
+      session:
+        key:  HOME_KAPTCHA_SESSION_KEY
+        date: HOME_KAPTCHA_SESSION_DATE
