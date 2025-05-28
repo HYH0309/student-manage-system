@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hyh</groupId>
-    <artifactId>HYH_Work</artifactId>
+    <artifactId>manage-back</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>HYH_Work</name>
     <description>HYH_Work</description>

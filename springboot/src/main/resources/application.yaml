@@ -1,9 +1,10 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.92.90.228:3306/hyh_work
+#    换成自己的配置可以看数据库的配置复杂
+    url: jdbc:mysql://localhost:3306/hyh_work
     username: root
-    password: mysql_mhzPC3
+    password: root
 server:
   port: 3009
 mybatis:

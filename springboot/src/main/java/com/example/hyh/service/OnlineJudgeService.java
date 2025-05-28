@@ -14,7 +14,7 @@ import java.util.Map;
 @Service
 public class OnlineJudgeService {
 
-    private final String targetUrl = "http://47.92.90.228:2358/submissions";
+    private final String targetUrl = "http://localhost/submissions";
     private final RestTemplate restTemplate = new RestTemplate();
 
     public ResponseEntity<String> submitCode(Submission submission) {
