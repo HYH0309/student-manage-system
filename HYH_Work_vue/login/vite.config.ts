@@ -10,7 +10,6 @@ import { envDir, sourceDir, manualChunks } from './scripts/build'
 import pkg from './package.json'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
-
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, envDir)
@@ -33,10 +32,9 @@ export default defineConfig(({ mode }) => {
      * @see https://cn.vitejs.dev/config/#server-proxy
      */
     server: {
-      host:'localhost',
+      host: 'localhost',
       port: 3000,
     },
-    
 
     build: {
       chunkSizeWarningLimit: 1500,
@@ -84,39 +82,6 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': sourceDir,
       },
-    },
-
-    css: {
-      /**
-       * 包括 `vw` / `rem` 单位转换等
-       *
-       * @description 请注意：
-       *  当前已预装了 Uno CSS ，默认以 `rem` 为单位自动适配（根字号为 `16px` ）
-       *  所以一般情况下不需要再安装这些转换插件，如果同时使用 REM 插件和 UNO ，
-       *  可能会因为 Root 的 Font Size 被重新设置而导致样式错乱！
-       *
-       * @see https://cn.vitejs.dev/config/shared-options.html#css-postcss
-       *
-       * @example
-       *
-       *  以使用 `vw` 作为移动端适配为例：
-       *    1. 先安装 postcss 依赖 `npm i -D postcss-px-to-viewport`
-       *    2. 导入本文件 `import px2vw from 'postcss-px-to-viewport'`
-       *    3. 取消下面函数的注释即可生效
-       */
-      // postcss: {
-      //   plugins: [
-      //     // 使用 postcss-pxtorem
-      //     // px2rem({
-      //     //   propList: ['*'],
-      //     // }),
-      //     // 使用 postcss-px-to-viewport
-      //     // px2vw({
-      //     //   viewportWidth: 375,
-      //     //   minPixelValue: 1,
-      //     // }),
-      //   ],
-      // },
     },
 
     plugins: [
@@ -220,5 +185,4 @@ export default defineConfig(({ mode }) => {
       }),
     ],
   }
-  
 })

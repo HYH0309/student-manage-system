@@ -4,29 +4,14 @@
       <h2 class="form_title title">这里可以注册一个新的账号哦</h2>
       <el-form ref="registerFormRef" :model="registerForm" :rules="rules">
         <el-form-item prop="username">
-          <el-input
-            v-model="registerForm.username"
-            class="form__input"
-            type="username"
-            placeholder="Name"
-          />
+          <el-input v-model="registerForm.username" class="form__input" type="username" placeholder="Name" />
         </el-form-item>
         <el-form-item prop="password">
-          <el-input
-            v-model="registerForm.password"
-            class="form__input"
-            type="password"
-            placeholder="Password"
-          />
+          <el-input v-model="registerForm.password" class="form__input" type="password" placeholder="Password" />
         </el-form-item>
         <el-form-item prop="captcha">
           <div class="captcha-wrapper">
-            <el-input
-              v-model="registerForm.captcha"
-              class="form__input"
-              type="text"
-              placeholder="Captcha"
-            />
+            <el-input v-model="registerForm.captcha" class="form__input" type="text" placeholder="Captcha" />
           </div>
         </el-form-item>
         <el-form-item label="" prop="role">
@@ -37,17 +22,10 @@
           </el-radio-group>
         </el-form-item>
       </el-form>
-      <img
-        :src="captchaUrl"
-        alt="Captcha"
-        class="captcha-img"
-        @click="refreshCaptcha"
-      />
+      <img :src="captchaUrl" alt="Captcha" class="captcha-img" @click="refreshCaptcha" />
       <br />
       <div class="form__button">
-        <el-button type="primary" :disabled="loading" @click="register"
-          >SIGN UP</el-button
-        >
+        <el-button type="primary" :disabled="loading" @click="register">SIGN UP</el-button>
       </div>
     </form>
   </div>
@@ -62,10 +40,10 @@ import { ElForm, ElMessage } from 'element-plus'
 const mainStore = useMainStore()
 
 const { showSignup } = storeToRefs(mainStore)
-const captchaUrl = ref('http://47.92.90.228:3009/api/code') // 默认载入验证码的URL
+const captchaUrl = ref('http://localhost:3009/api/code') // 默认载入验证码的URL
 
 const refreshCaptcha = () => {
-  captchaUrl.value = `http://47.92.90.228:3009/api/code?_t=${Date.now()}` // 刷新验证码图片
+  captchaUrl.value = `http://localhost:3009/api/code?_t=${Date.now()}` // 刷新验证码图片
 }
 
 watch(showSignup, () => {

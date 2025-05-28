@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 @MapperScan("com.example.hyh.mapper")
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 public class HyhWorkApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(HyhWorkApplication.class, args);
     }
