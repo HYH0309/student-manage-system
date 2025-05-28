@@ -1,7 +1,8 @@
-# 🤬 华农 IMIS 限定版：学生管理屎山系统 [![GitHub license](https://img.shields.io/badge/license-祖传代码-red.svg)](https://github.com/SCAU-IMIS/ShitMountain) [![GitHub stars](https://img.shields.io/github/stars/SCAU-IMIS/ShitMountain)](https://github.com/SCAU-IMIS/ShitMountain/stargazers) [![GitHub issues](https://img.shields.io/github/issues/SCAU-IMIS/ShitMountain)](https://github.com/SCAU-IMIS/ShitMountain/issues)
+# 🤬 华农 IMIS 限定版：学生管理屎山系统
+
+[![GitHub license](https://img.shields.io/badge/license-祖传代码-red.svg)](https://github.com/SCAU-IMIS/ShitMountain) [![GitHub stars](https://img.shields.io/github/stars/SCAU-IMIS/ShitMountain)](https://github.com/SCAU-IMIS/ShitMountain/stargazers) [![GitHub issues](https://img.shields.io/github/issues/SCAU-IMIS/ShitMountain)](https://github.com/SCAU-IMIS/ShitMountain/issues)
 
 > "紫荆桥下写 bug，芷园饭里找需求，校巴车上改文档" —— IMIS 学子三大人生阶段  
-> ![SCAU Campus](https://via.placeholder.com/800x400.png?text=华农IMIS特供屎山系统截图)
 
 欢迎来到这个 SCAU IMIS 特供项目！完美诠释了咱们专业的终极奥义：
 
@@ -15,7 +16,9 @@
 - 在华山宿舍深夜 debug 的秃头战士
 - 在图书馆抢不到座位只能在树木园写代码的狠人
 
-## 💩 技术"栈"（学院 2020 年教学大纲限定版） [![Vue](https://img.shields.io/badge/Vue-3.4.15-brightgreen)](https://vuejs.org/) [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-祖传版本-yellowgreen)](https://spring.io/) [![MySQL](https://img.shields.io/badge/MySQL-密码裸奔-red)](https://www.mysql.com/)
+## 💩 技术"栈"（学院 2020 年教学大纲限定版）
+
+ [![Vue](https://img.shields.io/badge/Vue-3.4.15-brightgreen)](https://vuejs.org/) [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-祖传版本-yellowgreen)](https://spring.io/) [![MySQL](https://img.shields.io/badge/MySQL-密码裸奔-red)](https://www.mysql.com/)
 
 - **前端**：
 
@@ -134,4 +137,3 @@ npm install
 > 4. 推送到远程分支 (`git push origin feature/你的奇葩想法`)
 > 5. 发起 Pull Request（我们大概率不会看）
 >
-> ![Demo](https://via.placeholder.com/600x300.png?text=系统运行效果图（其实根本跑不起来）)
